@@ -25,6 +25,24 @@ int main ()
    Code By Wolf
      int n;
     cin>>n;
+   int arr[n+1];
+   for(int i=1;i<=n;i++)
+      {
+         cin>>arr[i];
+      }
+   int i=1,j=n;
+
+   while(i<=n && arr[i]==i) i++;
+   while(j>0 && arr[j]==j) j--;
+
+   if(i<j && (arr[i]==j && arr[j]==i ))
+   {
+      cout<<i<<" "<<j<<endl;
+   }
+   else
+   {
+      cout<<"0 0"<<endl;
+   }
   
 }
 
